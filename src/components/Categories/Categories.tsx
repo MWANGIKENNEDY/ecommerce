@@ -63,7 +63,7 @@ const Categories = () => {
       <div className="wrapper w-screen flex gap-4 overflow-x-scroll px-4   scroll-bar-hide ">
 
         {products.map((product,index)=>
-        <Link href="#" className="flex-shrink-0 w-full sm:w-full md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%]">
+        <Link key={index} href="#" className="flex-shrink-0 w-full sm:w-full md:w-[40%] lg:w-[30%] xl:w-[25%] 2xl:w-[20%]">
 
             <div className=" h-[250px]  relative">
                 <Image alt="" src={product.img} fill className=" object-cover rounded-md"/>
